@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjit Kannan - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@2.15.4/dist/full.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #6b46c1, #b83280); 
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(to bottom, #553c9a, #882d72); 
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden; 
+        }
+
+        .section-heading {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(to right, #6b46c1, #b83280);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .experience-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            background-color: #b83280;
+            border-radius: 50%;
+        }
+
+        .experience-item::after {
+            content: '';
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Parallax Effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax-1 {
+            background-image: url('https://images.unsplash.com/photo-1510531708158-68a40c20d064?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            height: 400px; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="py-10 text-center">
+        <h1 class="text-4xl font-bold text-gray-800">Sanjit Kannan</h1>
+        <p class="text-gray-600">Aspiring Technologist & Entrepreneur</p>
+    </header>
+
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">About Me</h2>
+            <p class="text-gray-700 mb-4">
+                A highly motivated and quick-learning individual with a passion for technology, entrepreneurship, and constantly seeking opportunities to expand my knowledge and skills in these areas. I bring strong problem-solving abilities, a collaborative spirit, and a commitment to delivering high-quality results.
+            </p>
+            <p class="text-gray-700">
+                Outside of my technical pursuits, I am an avid gamer, enjoy staying updated on the latest tech trends, and find fulfillment in giving back to the community.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="glass-card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3">Technical Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Robotics (FTC Experience)</li>
+                        <li>Website Development (HTML, CSS, JavaScript)</li>
+                        <li>API Integration (Gemini API)</li>
+                        <li>Digital Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3">Soft Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Problem-Solving</li>
+                        <li>Time Management</li>
+                        <li>Customer Service</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-semibold mb-3">Languages</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>English (Native)</li>
+                        <li>Tamil (Intermediate)</li> 
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Experience</h2>
+
+            <div class="experience-item">
+                <h3 class="text-lg font-semibold mb-2">Independent Game Account Seller</h3>
+                <p class="text-gray-600">McKinney, Texas | May 2022 - Jan 2023</p>
+                <ul class="list-disc list-inside text-gray-700 ml-6">
+                    <li>Managed the sale of various game accounts, ensuring high levels of customer satisfaction.</li>
+                    <li>Developed marketing strategies to reach a broad audience of potential buyers.</li>
+                    <li>Handled customer inquiries, negotiations, and transactions efficiently.</li>
+                    <li>Maintained detailed records of sales and customer interactions.</li>
+                    <li>Enhanced my understanding of online marketplaces and digital marketing.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="text-lg font-semibold mb-2">FTC Robotics Team Member</h3>
+                <p class="text-gray-600">Frisco, Texas | Aug 2022 - May 2023</p>
+                <ul class="list-disc list-inside text-gray-700 ml-6">
+                    <li>Participated in designing, building, and programming robots for FTC competitions.</li>
+                    <li>Collaborated with team members to develop strategies and improve robot performance.</li>
+                    <li>Gained hands-on experience with mechanical and electrical systems.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3 class="text-lg font-semibold mb-2">Sci-Tech Discovery Center Volunteer</h3>
+                <p class="text-gray-600">Frisco, Texas | May 2024</p>
+                <ul class="list-disc list-inside text-gray-700 ml-6">
+                    <li>Helped set up and organize exhibits, ensuring they were engaging and accessible for all visitors.</li>
+                    <li>Assisted visitors by providing information, answering questions, and ensuring a positive experience.</li>
+                    <li>Conducted guided tours, explained exhibits, and interacted with diverse groups, enhancing my ability to communicate effectively.</li>
+                    <li>Collaborated with other volunteers and staff to coordinate events and activities, demonstrating strong teamwork skills.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id="projects" class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="section-heading">Projects</h2>
+            <div class="glass-card p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold mb-3">SpeedyOCR - Online OCR Platform</h3>
+                <p class="text-gray-700 mb-4">Developed SpeedyOCR, an online platform providing Optical Character Recognition (OCR) services to extract text from images, videos, and PDFs.</p>
+                <ul class="list-disc list-inside text-gray-700 ml-6">
+                    <li>Integrated the Gemini API for advanced OCR capabilities.</li>
+                    <li>Implemented a user-friendly interface with features like text copying, file downloading, and Google AdSense integration.</li>
+                    <li>Highlighted various use cases for the OCR tool, catering to diverse user needs such as document digitization, transcription, and academic research.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="section-heading">Contact</h2>
+            <p class="text-gray-700 mb-6">Let's Connect!</p>
+            <ul class="flex justify-center space-x-6">
+                <li><a href="mailto:sanjit1234cool@gmail.com" class="text-gray-800 hover:text-indigo-600"><i class="fas fa-envelope fa-2x"></i></a></li> 
+                <li><a href="tel:3312203103" class="text-gray-800 hover:text-indigo-600"><i class="fas fa-phone fa-2x"></i></a></li> 
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="py-4 text-center text-gray-600">
+        &copy; 2023 Sanjit Kannan. All rights reserved.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script>
+         // Initialize ScrollReveal
+         ScrollReveal({
+            origin: 'bottom',
+            distance: '30px',
+            duration: 1000,
+            reset: true 
+        });
+
+        // Target elements to reveal
+        ScrollReveal().reveal('.section-heading, .glass-card, .experience-item', { delay: 200 });
+        ScrollReveal().reveal('footer', { delay: 300 }); 
+    </script>
+</body>
+</html>
